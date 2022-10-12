@@ -47,6 +47,7 @@ services:
   nginx:
     image: nginx-voila
     build:
+      # context: /Users/brian/work/poc/jupyter-stacks-voila
       context: $JSVDIR
       dockerfile: docker/Dockerfile.nginx
     restart: unless-stopped
@@ -56,4 +57,5 @@ services:
     ports:
       - 80:80
     volumes:
+      # - /Users/brian/work/poc/jupyter-stacks-voila/nginx/conf.d/:/etc/nginx/conf.d/
       - $JSVDIR/nginx/conf.d/:/etc/nginx/conf.d/
