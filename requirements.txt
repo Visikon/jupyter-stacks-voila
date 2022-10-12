@@ -4,3 +4,5 @@ ipympl
 ipysheet
 ipywidgets
 voila
+pymongo
+dotwiz
