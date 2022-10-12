@@ -1,3 +1,6 @@
 *.pyc
 *checkpoint*
 *.sw*
+
+# macOS
+.DS_Store
